@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <meta name="description" content="Игра-исследование тибетской космологии. 80 состояний сознания, 6 путей кармы. Достигните просветления!">
+    <meta name="theme-color" content="#0a0a1a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Колесо Сансары · Тибетская космология</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div style="text-align: center;">
+            <h1 class="game-title">☸ КОЛЕСО САНСАРЫ ☸</h1>
+            <p class="game-subtitle">80 состояний сознания · 6 путей кармы</p>
+        </div>
+        
+        <!-- КУБИК - КНОПКА СЛУЧАЙНОГО ПЕРЕХОДА -->
+        <div class="cube-wrapper" id="cubeRandomBtn">
+            <div class="cube-3d" id="rotatingCube">
+                <div class="face front"><span>😇</span><h3>Боги</h3></div>
+                <div class="face back"><span>😈</span><h3>Асуры</h3></div>
+                <div class="face right"><span>👤</span><h3>Люди</h3></div>
+                <div class="face left"><span>🐘</span><h3>Животные</h3></div>
+                <div class="face top"><span>👻</span><h3>Преты</h3></div>
+                <div class="face bottom"><span>🔥</span><h3>Ады</h3></div>
+            </div>
+        </div>
+        <div class="click-hint">🎲 НАЖМИ НА КУБИК — СЛУЧАЙНЫЙ ПЕРЕХОД 🎲</div>
+
+        <!-- карточка состояния -->
+        <div class="state-card" id="stateCard">
+            <div class="state-title" id="stateName">Мир Людей</div>
+            <div class="realm-badge">
+                <span>🌍 Сансара</span>
+                <span>🎲 6 путей</span>
+                <span>☸️ Карма</span>
+            </div>
+            <div class="state-desc" id="stateDesc">Загрузка...</div>
+            <div class="six-paths" id="pathButtonsContainer"></div>
+            <div class="footer-stats">
+                <span>📍 <span id="vertexIdLabel">состояние 0</span></span>
+                <span>🔗 6 кармических путей</span>
+                <span id="nirvanaFlag"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
