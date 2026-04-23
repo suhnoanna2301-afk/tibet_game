@@ -195,7 +195,7 @@ function updateUI() {
     description += `<em>Кармическая причина:</em> ${realm.karma}<br><br>`;
     description += `<strong>Состояние сознания:</strong> ${vertex.name}<br>`;
     if (vertex.isFinal) {
-        description += `<br><span style="color:#ffd966; font-weight:bold;">✨ ЭТО СОСТОЯНИЕ — ВЫХОД ИЗ САНСАРЫ! Вы достигли просветления и освободились из круговорота перерождений. ✨</span>`;
+        description += `<br><span style="color:#00FFFF; font-weight:bold;">✨ ЭТО СОСТОЯНИЕ — ВЫХОД ИЗ САНСАРЫ! Вы достигли просветления и освободились из круговорота перерождений. ✨</span>`;
     }
     
     stateDescEl.innerHTML = description;
